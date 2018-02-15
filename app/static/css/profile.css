@@ -27,7 +27,7 @@ h3{
 body{
     background-color: lavender;
     border-style: outset 2px;
-    margin:0 auto;
+    margin: 10%;
     padding: 0;
     text-align: center;
 }
@@ -45,7 +45,7 @@ body{
 
 .bottom{
     width:500px;
-    height:250px;
+    height:300px;
     margin:0 auto;
     padding:10px 25px;
     border:1px solid #ccc;

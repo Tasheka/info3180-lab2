@@ -2,12 +2,15 @@
 <html>
 <head>
     <title> Tasheka Martin Profile </title>
- <link rel=stylesheet type=text/css href="{{ url_for('/info3180-lab2/app/static/css', filename='profile.css') }}">
+    {% block css %} 
+ <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/profile.css') }}">
+    {% endblock%}
 </head>
 {% extends 'base.html' %}
     <body>
+        {% block main %}
         <div class="top">
-        <img src="{{ url_for('', filename='info3180-lab2/app/static/' + download.jpg) }}" />
+        <img src="{{ url_for('static', filename='download.jpg') }}" />
         <h1> Tasheka Martin </h1>
         <h3> tasheka@martin </h3>
         <h3> Kingston, Jamaica </h3>
@@ -24,7 +27,7 @@
         <h3> <bold> 6010 </bold></h3>
         <h3> <p> Following </p> </h3>
         </div>
-        <div id="fol2"
+        <div id="fol2">
         <h3> <bold> 6015 </bold></h3>
         <h3> <p> Followers </p> </h3>
         </div>
@@ -32,5 +35,6 @@
        
 <button class="button">Follow</button> 
         </div>
+        {% endblock %}
     </body>
         </html>

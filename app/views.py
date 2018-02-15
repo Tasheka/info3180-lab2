@@ -26,8 +26,8 @@ def about():
     
 @app.route('/profile/')
 def profile():
-    """Render the website's about page."""
-    return render_template('about.html', name="Mary Jane")
+    """My profile page."""
+    return render_template('profile.html', name="Tasheka Martin")
     
 def format_date_joined():
     now = datetime.datetime.now() # today's date
